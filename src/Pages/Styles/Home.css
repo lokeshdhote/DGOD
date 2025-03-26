@@ -119,6 +119,10 @@ h6 {
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
 }
+.portfolio-section{
+  transform: translate(0)!important;
+  
+}
 
 /* Responsive Typography */
 @media (max-width: 768px) {

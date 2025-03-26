@@ -129,19 +129,18 @@ const Work = () => {
     setSelectedProject(project);
     setCurrentImageIndex(0);
     setZoomLevel(1);
-    if (autoScrollRef.current) {
-      clearInterval(autoScrollRef.current);
-    }
-    document.body.classList.add('modal-open');
+    // if (autoScrollRef.current) {
+    //   clearInterval(autoScrollRef.current);
+    // }
+    // document.body.classList.add('modal-open');
   };
 
   const closeModal = () => {
     setSelectedProject(null);
     setZoomLevel(1);
-    document.body.classList.remove('modal-open');
-    startAutoScroll();
+    document.body.classList.remove('modal-open'); // Allow scrolling again
+    startAutoScroll(); // Restart auto-scroll when modal is closed
   };
-
   const nextImage = () => {
     if (selectedProject) {
       setCurrentImageIndex((prevIndex) =>
@@ -170,13 +169,14 @@ const Work = () => {
   const duplicatedProjects = [...projects, ...projects];
 
   return (
+    <>
     <div className="portfolio-container">
       <div className="portfolio-header">
         <div className="portfolio-label"><h4>-Portfolio-</h4></div>
         <h1>Our  Portfolio</h1>
         <p>We work on various web technologies and deliver quality work to our clients.</p>
       </div>
-      
+     
       <div className="portfolio-carousel-container">
         <div className="portfolio-carousel" ref={sliderRef}>
           {duplicatedProjects.map((project, index) => (
@@ -219,9 +219,11 @@ const Work = () => {
             />
           ))}
         </div>
+       
       </div>
-
-      {selectedProject && (
+     
+    </div>
+    {selectedProject && (
         <div className="modal-overlay" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-modal" onClick={closeModal}>×</button>
@@ -266,7 +268,8 @@ const Work = () => {
           </div>
         </div>
       )}
-    </div>
+    </>
+    
   );
 };
 

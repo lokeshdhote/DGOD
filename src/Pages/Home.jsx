@@ -438,7 +438,7 @@ const Home = () => {
       </section>
       
       {/* Portfolio Section - Showcase work */}
-      <section className="portfolio-section py-16">
+      <section className="portfolio-section ">
         <Work />
       </section>
       
