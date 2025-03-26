@@ -1,0 +1,748 @@
+.page-heading {
+  text-align: center;
+  padding: 10px 20px 5px;
+  margin-bottom: 5px;
+}
+
+.heading-primary {
+  color: #fa9732;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 0 4px 0;
+}
+
+.heading-secondary {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.ax-hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+/* carousel styles */
+.carousel {
+  --carousel-height: 600px;
+  --carousel-width: 1200px;
+  --carousel-item-height: 200px;
+  --carousel-item-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.carousel-container {
+  align-items: center;
+  display: flex;
+  min-height: var(--carousel-height);
+  margin: 0 auto;
+  max-width: var(--carousel-width);
+  position: relative;
+  margin-top: 5px;
+}
+
+.carousel-item {
+  height: var(--carousel-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--carousel-item-width);
+  z-index: 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .carousel {
+    --carousel-width: 1000px;
+    --carousel-item-height: 180px;
+    --carousel-item-width: 180px;
+    padding: 8px;
+  }
+
+  .page-heading {
+    padding: 15px 15px 8px;
+  }
+
+  .heading-primary {
+    font-size: 2.2rem;
+    margin: 0 0 4px 0;
+  }
+
+  .heading-secondary {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel {
+    --carousel-width: 600px;
+    --carousel-height: 300px;
+    --carousel-item-height: 100px;
+    --carousel-item-width: 100px;
+    padding: 8px;
+  }
+
+  .page-heading {
+    padding: 8px 15px 4px;
+  }
+
+  .heading-primary {
+    font-size: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.4rem;
+  }
+
+  .carousel-dots {
+    margin-top: 15px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    --carousel-width: 100%;
+    --carousel-height: 250px;
+    --carousel-item-height: 80px;
+    --carousel-item-width: 80px;
+    padding: 6px;
+  }
+
+  .page-heading {
+    padding: 6px 12px 3px;
+  }
+
+  .carousel-item-2,
+  .carousel-item-4 {
+    height: calc(var(--carousel-item-height) * 1.3);
+    width: calc(var(--carousel-item-width) * 1.3);
+  }
+
+  .carousel-item-3 {
+    height: calc(var(--carousel-item-height) * 1.6);
+    width: calc(var(--carousel-item-width) * 1.6);
+  }
+
+  .carousel-dots {
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .carousel-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    --carousel-height: 200px;
+    --carousel-item-height: 60px;
+    --carousel-item-width: 60px;
+    padding: 5px;
+  }
+
+  .page-heading {
+    padding: 8px 8px 4px;
+  }
+
+  .heading-primary {
+    font-size: 1.5rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.1rem;
+  }
+
+  .manual-nav {
+    width: 35px;
+    height: 35px;
+  }
+
+  .carousel-dots {
+    margin-top: 6px;
+    gap: 5px;
+  }
+}
+
+/* carousel styles */
+.carousel {
+  --carousel-height: 600px;
+  --carousel-width: 1200px;
+  --carousel-item-height: 200px;
+  --carousel-item-width: 200px;
+
+  width: 100%;
+}
+
+.carousel-container {
+  align-items: center;
+  display: flex;
+  min-height: var(--carousel-height);
+  margin: 0 auto;
+  max-width: var(--carousel-width);
+  position: relative;
+}
+
+.carousel-item {
+  height: var(--carousel-item-height);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.3s ease-in-out;
+  width: var(--carousel-item-width);
+  z-index: 0;
+}
+
+.carousel-item-1 {
+  left: 15%;
+  opacity: 0.4;
+}
+
+.carousel-item-2,
+.carousel-item-4 {
+  height: calc(var(--carousel-item-height) * 1.5);
+  opacity: 1;
+  width: calc(var(--carousel-item-width) * 1.5);
+  z-index: 1;
+}
+
+.carousel-item-2 {
+  left: 30%;
+}
+
+.carousel-item-3 {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+    0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+    0 0 100px rgba(255, 255, 255, 0.1);
+  height: calc(var(--carousel-item-height) * 2);
+  opacity: 1;
+  left: 50%;
+  width: calc(var(--carousel-item-width) * 2);
+  z-index: 2;
+}
+
+.carousel-item-4 {
+  left: 70%;
+}
+
+.carousel-item-5 {
+  left: 85%;
+  opacity: 0.4;
+}
+
+/* Manual Navigation Arrows */
+.manual-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.manual-nav:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.manual-nav.prev {
+  left: 10px;
+}
+
+.manual-nav.next {
+  right: 10px;
+}
+
+.manual-nav::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  display: block;
+}
+
+.manual-nav.prev::before {
+  transform: rotate(-135deg);
+  margin-left: 5px;
+}
+
+.manual-nav.next::before {
+  transform: rotate(45deg);
+  margin-right: 5px;
+}
+
+/* carousel button styles */
+.carousel-control {
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 4px;
+  color: #aaa;
+  cursor: pointer;
+  height: 22px;
+  margin: 0 20px;
+  position: relative;
+  transform: scale(1.5);
+  transition: transform 0.5s ease-out;
+  width: 22px;
+}
+
+.carousel-control:hover {
+  transform: scale(1.3);
+}
+
+/* previous button */
+.carousel-control-previous::after,
+.carousel-control-previous::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+}
+.carousel-control-previous::before {
+  background: currentColor;
+  border-radius: 2px;
+  right: 11px;
+  width: 2px;
+}
+.carousel-control-previous::after {
+  border-bottom: 4px solid transparent;
+  border-right: 5px solid;
+  border-top: 4px solid transparent;
+  right: 5px;
+  width: 0;
+}
+
+/* next button */
+.carousel-control-next::after,
+.carousel-control-next::before {
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 8px;
+  position: absolute;
+  top: 5px;
+}
+.carousel-control-next::before {
+  background: currentColor;
+  border-radius: 2px;
+  left: 11px;
+  width: 2px;
+}
+.carousel-control-next::after {
+  border-bottom: 4px solid transparent;
+  border-left: 5px solid;
+  border-top: 4px solid transparent;
+  left: 5px;
+  width: 0;
+}
+
+/* play button */
+.carousel-control-play::before {
+  border-bottom: 5px solid transparent;
+  border-left: 6px solid;
+  border-top: 5px solid transparent;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 10px;
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 0;
+}
+
+/* pause button */
+.carousel-control-play.playing::before {
+  border-bottom: 0;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-top: 0;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 6px;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+}
+
+/* add button */
+.carousel-control-add::after,
+.carousel-control-add::before {
+  background: currentColor;
+  border-radius: 5px;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  width: 10px;
+}
+.carousel-control-add::after {
+  height: 10px;
+  left: 8px;
+  top: 4px;
+  width: 2px;
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  border: 2px solid #aaa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+  transform: scale(1.2);
+}
+
+.carousel-dot.active {
+  background: #fff;
+  border-color: #666;
+  transform: scale(1.2);
+}
+
+.projects-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: transparent;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  color: #ff9533;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  color: #333;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.projects-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.tabs-container {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tabs-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  color: #333;
+  font-weight: 600;
+}
+
+.tab-button.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff9533;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.project-card.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-card.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: none;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Updated Responsive Styles */
+@media (min-width: 1441px) {
+  .projects-section {
+    padding: 100px 40px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .projects-grid {
+    gap: 40px;
+  }
+
+  .tab-button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projects-section {
+    padding: 70px 20px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .projects-grid {
+    gap: 25px;
+  }
+
+  .tabs-container {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-section {
+    padding: 60px 16px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .tabs-container {
+    gap: 20px;
+  }
+
+  .tab-button {
+    font-size: 15px;
+  }
+
+  .projects-header {
+    margin-bottom: 40px;
+  }
+
+  .projects-tabs {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 50px 14px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .projects-grid {
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .tabs-container {
+    gap: 16px;
+  }
+
+  .tab-button {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
+  .projects-tabs {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .projects-section {
+    padding: 40px 12px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tabs-container {
+    gap: 12px;
+  }
+
+  .tab-button {
+    font-size: 13px;
+    padding: 5px 0;
+  }
+
+  .projects-header {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 360px) {
+  .projects-section {
+    padding: 30px 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .tab-button {
+    font-size: 12px;
+  }
+
+  .projects-grid {
+    gap: 12px;
+  }
+}
+
+/* Add smooth transitions */
+.project-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.tab-button {
+  transition: all 0.3s ease;
+}
+
+/* Improve tab scrolling experience */
+.tabs-container {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}

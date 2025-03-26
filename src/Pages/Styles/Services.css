@@ -1,0 +1,143 @@
+.services-wrapper {
+  width: 100%;
+}
+
+.services-hero {
+  background-color: #ffece4;
+  min-height: 284px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.services-container {
+  max-width: 1172px;
+  width: 100%;
+  text-align: center;
+}
+
+.services-container h1 {
+  color: #1d1d1d;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  font-family: "Inter", sans-serif;
+}
+
+.services-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.services-breadcrumb a {
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.services-breadcrumb a:hover {
+  color: #ff6b6b;
+}
+
+.services-breadcrumb span {
+  color: #666666;
+}
+
+/* Responsive Styles */
+@media (min-width: 1441px) {
+  .services-container {
+    max-width: 1280px;
+  }
+
+  .services-container h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .services-hero {
+    min-height: 260px;
+    padding: 50px 20px;
+  }
+
+  .services-container h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-hero {
+    min-height: 240px;
+    padding: 40px 20px;
+  }
+
+  .services-container h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    min-height: 220px;
+    padding: 35px 20px;
+  }
+
+  .services-container h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .services-breadcrumb {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-hero {
+    min-height: 200px;
+    padding: 30px 15px;
+  }
+
+  .services-container h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .services-breadcrumb {
+    font-size: 14px;
+    gap: 6px;
+  }
+}
+
+@media (max-width: 360px) {
+  .services-hero {
+    min-height: 180px;
+    padding: 25px 10px;
+  }
+
+  .services-container h1 {
+    font-size: 28px;
+  }
+
+  .services-breadcrumb {
+    font-size: 13px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .services-hero {
+    background-color: white;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .services-breadcrumb a {
+    text-decoration: none;
+  }
+}

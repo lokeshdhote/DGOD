@@ -1,0 +1,140 @@
+/* Home.css */
+.home-container {
+  display: grid;
+  gap: 400px; /* Adjust this value to your preference */
+}
+/* Font Variables */
+:root {
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Open Sans', sans-serif;
+  --font-accent: 'Playfair Display', serif;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+/* Base Typography */
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h5 {
+  font-size: var(--text-xl);
+}
+
+h6 {
+  font-size: var(--text-lg);
+}
+
+/* Special Elements */
+.accent-text {
+  font-family: var(--font-accent);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-medium);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #666;
+}
+
+/* Component-specific Typography */
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-bold);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+  font-weight: var(--font-medium);
+}
+
+.service-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+}
+
+.testimonial-text {
+  font-size: var(--text-lg);
+  font-style: italic;
+}
+
+.testimonial-author {
+  font-weight: var(--font-medium);
+}
+
+.footer-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--text-4xl);
+  }
+  
+  h2 {
+    font-size: var(--text-3xl);
+  }
+  
+  h3 {
+    font-size: var(--text-2xl);
+  }
+  
+  .section-title {
+    font-size: var(--text-2xl);
+  }
+}

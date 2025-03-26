@@ -1,0 +1,132 @@
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+
+      .clients-section {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+
+      .section-header {
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        color: #fa9732;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .section-subtitle {
+        color: #666;
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+      }
+
+      .clients-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .client-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        opacity: 0.7;
+      }
+
+      .client-logo:hover {
+        transform: scale(1.05);
+        opacity: 1;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .client-logo img {
+        max-width: 120px;
+        max-height: 80px;
+        object-fit: contain;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+      }
+
+      .client-logo:hover img {
+        filter: grayscale(0%);
+      }
+
+      .trust-badges {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .trust-badge {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .trust-badge-icon {
+        width: 70px;
+        height: 70px;
+        background-color: #fa9732;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        box-shadow: 0 10px 25px rgba(250, 151, 50, 0.2);
+      }
+
+      .trust-badge-title {
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .trust-badge-description {
+        color: #666;
+        max-width: 250px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 1024px) {
+        .clients-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .clients-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .trust-badges {
+          flex-direction: column;
+          gap: 2rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .clients-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+      }

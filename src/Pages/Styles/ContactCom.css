@@ -1,0 +1,182 @@
+.contact-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.contact-container {
+  width: 1172px;
+  height: 284px;
+  background-color: #fff5f3;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 40px;
+}
+
+.contact-image-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  width: 412px;
+  height: 414px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contact-image {
+  width: 412px;
+  height: 414px;
+  object-fit: contain;
+}
+
+.contact-content {
+  margin-left: 45%;
+  padding-right: 40px;
+}
+
+.contact-title {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-subtitle {
+  display: block;
+  color: #333333;
+}
+
+.get-in-touch-btn {
+  background-color: #fa9732;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #e88520;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .contact-container {
+    width: 90%;
+    height: auto;
+    min-height: 284px;
+    padding: 20px;
+  }
+
+  .contact-image-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-content {
+    margin-left: 40%;
+  }
+
+  .contact-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-image-wrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 0;
+  }
+
+  .contact-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-content {
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .contact-image-wrapper {
+    width: 250px;
+    height: 250px;
+    max-width: none;
+  }
+
+  .contact-content {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .contact-title {
+    font-size: 32px;
+  }
+
+  .get-in-touch-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .contact-image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .get-in-touch-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}

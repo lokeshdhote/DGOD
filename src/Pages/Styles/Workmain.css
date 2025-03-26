@@ -1,0 +1,354 @@
+/* Portfolio.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.portfolio-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-label {
+  display: inline-block;
+  background-color: #ffeeee;
+  color: #ff8c38;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.portfolio-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.portfolio-header p {
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+/* New carousel styles */
+.portfolio-carousel-container {
+  position: relative;
+  margin: 0 -20px;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.portfolio-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.portfolio-carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.project-card {
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 0 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  position: relative;
+  scroll-snap-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+.project-image-container {
+  position: relative;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-image-container:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-info {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.project-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+
+.client-url {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 15px;
+}
+
+.explore-btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.explore-btn:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.05);
+}
+
+/* Pagination dots */
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination-dot.active {
+  background-color: #ff8c38;
+  transform: scale(1.2);
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+ /* Center the modal */
+  width: 300px; /* Set a fixed width */
+  height: 150px; /* Set a fixed height */
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the modal */
+  color: white; /* Text color */
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 15px;
+  position: relative;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Hide overflow within the modal content */
+  margin: auto; /* Center the modal */
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-gallery {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.gallery-main {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery-main img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gallery-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.gallery-nav {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-counter {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.zoom-controls {
+  display: flex;
+  gap: 10px;
+  margin-left: 15px;
+}
+
+.zoom-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-info {
+  padding: 20px 20px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.modal-info h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+}
+
+.modal-info p {
+  margin: 0;
+  color: #666;
+}
+
+.modal-info a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .project-card {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 0 calc(100% - 20px);
+  }
+
+  .gallery-main {
+    height: 400px;
+  }
+
+  .portfolio-header h1 {
+    font-size: 28px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .portfolio-header h1 {
+    font-size: 24px;
+  }
+
+  .gallery-main {
+    height: 300px;
+  }
+  
+
+}

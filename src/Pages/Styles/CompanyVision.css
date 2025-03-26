@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap");
+.containerVission {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 2rem;
+}
+
+.section-title {
+  color: #fa9732;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.company-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 30px;
+}
+
+.section {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.section-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  filter: grayscale(100%) brightness(70%);
+  transition: filter 0.3s ease;
+  border-radius: 8px;
+}
+
+.section:hover .section-image {
+  filter: grayscale(0%) brightness(100%);
+}
+
+.section-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #fa9732;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 1.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-subtitle {
+  color: #fa9732;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  font-size: 1.3rem;
+}
+
+.section-text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+  .company-sections {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-icon {
+    top: 160px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerVission {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-image {
+    height: 180px;
+  }
+
+  .section-icon {
+    top: 140px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-image {
+    height: 150px;
+  }
+
+  .section-icon {
+    top: 120px;
+    width: 45px;
+    height: 45px;
+  }
+}
