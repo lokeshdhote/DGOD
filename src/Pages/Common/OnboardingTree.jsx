@@ -54,7 +54,7 @@ const OnboardingTree = () => {
           {/* Step 1 */}
           <div className="step" data-aos="fade-right">
             <div className="step-content">
-              <div className="step-icon"><FaSearch size={30}  /></div>
+              <div className="step-icon"><FaSearch   /></div>
               <h2 className="step-title">Understanding</h2>
               <p className="step-description">
                 For us, it is very important to understand the requirement of your business and accordingly provide customized solutions. We conduct detailed research to offer the best solution at an affordable cost.
@@ -65,7 +65,7 @@ const OnboardingTree = () => {
           {/* Step 2 */}
           <div className="step" data-aos="fade-left">
             <div className="step-content">
-              <div className="step-icon"><FaClipboardList size={30}  /></div>
+              <div className="step-icon"><FaClipboardList   /></div>
               <h2 className="step-title">Process & Plan Formation</h2>
               <p className="step-description">
                 Develop a detailed project plan outlining steps in website development or digital marketing campaigns. Define goals, timelines, and responsibilities for smooth execution.
@@ -76,7 +76,7 @@ const OnboardingTree = () => {
           {/* Step 3 */}
           <div className="step" data-aos="fade-right">
             <div className="step-content">
-              <div className="step-icon"><FaCheckCircle size={30}  /></div>
+              <div className="step-icon"><FaCheckCircle   /></div>
               <h2 className="step-title">Selecting Best Plan</h2>
               <p className="step-description">
                 Based on requirements, we recommend the most suitable plan with estimated outcomes that fit within the client's budget, timeline, and goals.
@@ -87,7 +87,7 @@ const OnboardingTree = () => {
           {/* Step 4 */}
           <div className="step" data-aos="fade-left">
             <div className="step-content">
-              <div className="step-icon"><FaCogs size={30}  /></div>
+              <div className="step-icon"><FaCogs   /></div>
               <h2 className="step-title">Execution and Implementation</h2>
               <p className="step-description">
                 Execute the website development or digital marketing campaign per the agreed timeline. Coordination is done with the client for feedback and adjustments.
@@ -98,7 +98,7 @@ const OnboardingTree = () => {
           {/* Step 5 */}
           <div className="step" data-aos="fade-right">
             <div className="step-content">
-              <div className="step-icon"><FaChartLine  size={30} /></div>
+              <div className="step-icon"><FaChartLine   /></div>
               <h2 className="step-title">Monitoring & Optimization</h2>
               <p className="step-description">
                 Monitor performance using analytics tools. Track key metrics like traffic, engagement, conversions, and ROI to ensure alignment with goals.
@@ -109,7 +109,7 @@ const OnboardingTree = () => {
           {/* Step 6 */}
           <div className="step" data-aos="fade-left">
             <div className="step-content">
-              <div className="step-icon"><FaTrophy size={30} /></div>
+              <div className="step-icon"><FaTrophy  /></div>
               <h2 className="step-title">Final Outcome/Result</h2>
               <p className="step-description">
                 Provide regular progress reports highlighting achievements and areas for improvement, ensuring measurable results such as increased traffic and better conversions.

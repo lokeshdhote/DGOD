@@ -142,7 +142,7 @@
 
 .onboarding-steps .step-title {
   font-size: 1.5rem;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   color: var(--primary);
   font-weight: 600;
   padding-left: 70px;
@@ -178,7 +178,7 @@
     margin-right: 30px; /* Add margin to prevent touching the edge */
   }
 
-  .onboarding-steps .step-number {
+  .onboarding-steps .step-.step-icon {
     top: 20px;
     left: 20px;
     width: 40px;
@@ -213,7 +213,7 @@
 
   .onboarding-steps .step-title {
     font-size: 1.3rem;
-    padding-left: 45px;
+    padding-left:48px;
     word-wrap: break-word; /* Allow long titles to break */
   }
 
@@ -222,8 +222,9 @@
     margin-top: 15px;
   }
 
-  .onboarding-steps .step-number {
+  .onboarding-steps .step-icon {
     width: 35px;
+    top: 30px;
     height: 35px;
     font-size: 1.1rem;
   }
