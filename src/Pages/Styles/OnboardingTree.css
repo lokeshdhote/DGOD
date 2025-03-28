@@ -122,9 +122,9 @@
   box-shadow: 0 15px 35px rgba(230, 126, 46, 0.15);
 }
 
-.onboarding-steps .step-number {
+.onboarding-steps .step-icon {
   position: absolute;
-  top: 30px;
+  top: 18px;
   left: 30px;
   width: 50px;
   height: 50px;
@@ -142,10 +142,10 @@
 
 .onboarding-steps .step-title {
   font-size: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--primary);
   font-weight: 600;
-  padding-left: 60px;
+  padding-left: 70px;
 }
 
 .onboarding-steps .step-description {
