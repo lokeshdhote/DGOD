@@ -31,6 +31,13 @@ body {
   max-width: 520px;
   padding-right: 40px;
   z-index: 2;
+  color: black;
+}
+.hero-left h1{
+  color: black;
+}
+.hero-left h1 span{
+  color: orange;
 }
 
 .hero-right {
