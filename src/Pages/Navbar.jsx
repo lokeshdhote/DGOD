@@ -188,7 +188,7 @@ const Navbar = () => {
             <span>Office No - 02, Fourth Floor, City Court, Zirakpur 140603, Chandigarh </span>
           </div>
           <Link to="/contact" className="consultation-btn mobile-contact">
-            contact Us  <svg
+            Contact Us  <svg
         className="arrow-icon"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
@@ -218,7 +218,7 @@ const Navbar = () => {
 
         <div className="navbar-right">
           <Link to="/contact" className="consultation-btn desktop-contact">
-           contact Us   <svg
+           Contact Us   <svg
         className="arrow-icon"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
