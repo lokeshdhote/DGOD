@@ -4,7 +4,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "../styles/Testimonials.css"; // External CSS
+import '../Styles/Testimonials.css'; // External CSS
 
 const Testimonials = () => {
   const testimonials = [
