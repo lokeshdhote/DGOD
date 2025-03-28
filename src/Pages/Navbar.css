@@ -27,7 +27,9 @@
   font-size: 16px;
   font-family: "Poppins", sans-serif;
 }
-
+.arrow-icon{
+  color: white;
+}
 .consultation-btn:hover {
   background-color: #e67e2e;
   transform: translateY(-2px);
