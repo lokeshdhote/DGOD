@@ -2,13 +2,13 @@
   /* width: 100%; */
   /* height: fit; */
   /* background-color: red; */
-  padding: 80px 20px;
+  padding: 15px 40px;
   /* background-color: #f9f9f9; */
   text-align: center;
 }
 
 .container {
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
   /* background-color: green; */
 }
@@ -37,7 +37,8 @@
 }
 
 .serviceBox {
-  width: 27vw;
+  /* background-color: red; */
+  width: 24vw;
   height: 18vw;
   background: #fff;
   border-radius: 12px;
@@ -128,7 +129,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.5));
+  /* filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.5)); */
 }
 
 /* Service Icons */
