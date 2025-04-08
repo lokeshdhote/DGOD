@@ -62,7 +62,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="containerw">
       <h1 className="FAQ">Frequently Asked Questions (FAQ)</h1>
       {faqData.map((faq, index) => (
         <div

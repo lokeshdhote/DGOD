@@ -1,16 +1,17 @@
 
 .testimonial-section {
   /* background-color: white; */
-  padding: 10px 20px;
+  padding: 0px 10px;
   position: relative;
   background-color: #fff8f5;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
+  /* background-color: green; */
 }
 
 .testimonial-section .header {
   text-align: center;
-  margin-bottom: 50px; /* Default margin */
+  margin-bottom: 40px; /* Default margin */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,10 +24,10 @@
 .testimonial-section .header-label {
   background-color: #ffe8d9;
   color: #ff8c38;
-  padding: 8px 20px;
+  padding: 0px 20px;
   border-radius: 25px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -111,23 +112,48 @@
   z-index: 10;
 }
 
-.swiper-button-prev {
+/* .swiper-button-prev {
   left: -60px; /* Moves left button further out */
+/* } */
+
+/* .swiper-button-next { */
+  /* right: -60px; Moves right button further out */
+/* } */ */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333; /* Change arrow color */
+  width: 30px;
+  height: 30px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #000; /* Darker on hover */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  top: 60%;
+  transform: translateY(-50%);
+  color: #333; /* Optional: arrow color */
+  z-index: 10;
+}
+
+.swiper-button-prev {
+  left: 20px;
 }
 
 .swiper-button-next {
-  right: -60px; /* Moves right button further out */
+  right: 20px;
 }
-
 
 
 
 /* Testimonials Container */
 .testimonial-container {
-
   text-align: center;
-  padding: 50px 20px;
+  padding: 120px 20px;
   background-color: #fff8f5;
+  /* background-color: red; */
 }
 
 /* Heading */
@@ -144,33 +170,37 @@
 
 /* Swiper Styling */
 .testimonial-slider {
+  width:83%;
   padding-bottom: 50px;
+  
+  /* background-color: red; */
 }
 
 /* Testimonial Card */
 .testimonial-card {
   background: white;
-  padding: 14px 16px;
+  padding: 10px 14px;
   
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  height: 300px;
+  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* background-color: black; */
 }
 
 /* Company Logo */
 .company-logo img {
-  height: 24px;
+  height: 22px;
   float: right;
   margin-top: 4px;
 }
 
 /* Testimonial Text */
 .testimonial-text {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
   font-style: italic;
   margin: 14px 0;
@@ -181,7 +211,7 @@
   padding: 0px 14px;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 15px;
 }
 
 /* Author Image */
@@ -194,13 +224,13 @@
 
 /* Author Info */
 .author-name {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #333;
 }
 
 .author-position {
-  font-size: 12px;
+  font-size: 10px;
   color: #777;
 }
 

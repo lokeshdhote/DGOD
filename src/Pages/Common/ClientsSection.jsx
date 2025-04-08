@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import LogoScrolling from "../Common/TrustedClients";
 import "../Styles/ClientsSection.css"; // Move styles to an external CSS file
+import Testimonials from "./TestimonialsCom";
+
 const ClientsSection = () => {
   useEffect(() => {
     // Optional: Add some subtle interactivity
@@ -27,6 +29,10 @@ const ClientsSection = () => {
           achieve remarkable growth.
         </p>
       </div>
+      <section className="testimonials-section py-16 bg-gray-50">
+        <Testimonials/>
+        {/* <TestimonialsCom /> */}
+      </section>
 <LogoScrolling /> 
       {/* <div className="clients-grid">
         {[

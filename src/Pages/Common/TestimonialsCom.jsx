@@ -75,42 +75,52 @@ const Testimonials = () => {
         </div>
       </div>
 
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={40} // Adds spacing between testimonial boxes
-        slidesPerView={1} // Default for mobile
-        breakpoints={{
-          768: { slidesPerView: 2 }, // Tablets
-          1024: { slidesPerView: 3 }, // Large screens
-        }}
-        loop={true}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
-        navigation
-        className="testimonial-slider"
-      >
-        {testimonials.map((testimonial, index) => (
-          <SwiperSlide key={index}>
-            <div className="testimonial-card">
-              <div className="company-logo">
-                <img src={testimonial.logo} alt={testimonial.company} />
-              </div>
-              <p className="testimonial-text">“{testimonial.content}”</p>
-              <div className="testimonial-footer">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="author-image"
-                />
-                <div>
-                  <h4 className="author-name">{testimonial.name}</h4>
-                  <p className="author-position">{testimonial.position}</p>
-                </div>
-              </div>
+      <div className="relative">
+  {/* Navigation Arrows */}
+  <div className="swiper-button-prev custom-nav" />
+  <div className="swiper-button-next custom-nav" />
+
+  <Swiper
+    modules={[Navigation, Pagination, Autoplay]}
+    spaceBetween={40}
+    slidesPerView={1}
+    breakpoints={{
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    }}
+    loop={true}
+    autoplay={{ delay: 3000, disableOnInteraction: false }}
+    pagination={{ clickable: true }}
+    navigation={{
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }}
+    className="testimonial-slider"
+  >
+    {testimonials.map((testimonial, index) => (
+      <SwiperSlide key={index}>
+        <div className="testimonial-card">
+          <div className="company-logo">
+            <img src={testimonial.logo} alt={testimonial.company} />
+          </div>
+          <p className="testimonial-text">“{testimonial.content}”</p>
+          <div className="testimonial-footer">
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className="author-image"
+            />
+            <div>
+              <h4 className="author-name">{testimonial.name}</h4>
+              <p className="author-position">{testimonial.position}</p>
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+          </div>
+        </div>
+      </SwiperSlide>
+    ))}
+  </Swiper>
+</div>
+
     </div>
   );
 };

@@ -443,9 +443,9 @@ const Home = () => {
       </section>
       
       {/* Testimonials - Additional social proof */}
-      <section className="testimonials-section py-16 bg-gray-50">
+      {/* <section className="testimonials-section py-16 bg-gray-50">
         <TestimonialsCom />
-      </section>
+      </section> */}
       
       {/* Onboarding Process - Build trust */}
       <section className="onboarding-tree-section py-16">

@@ -54,7 +54,8 @@ const InfiniteLogoCarousel = () => {
     <div>
       <div className="heading-container">
         <h2 className="heading">
-          Trusted by startups and Fortune <span className="highlight">500</span> companies
+          <h1 className='heading-title'>   Trusted by Company</h1>
+          Trusted by startups and Fortune <span className="highlight">1K</span> companies
         </h2>
       </div>
 
